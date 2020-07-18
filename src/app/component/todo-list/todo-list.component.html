@@ -1,0 +1,18 @@
+<body>
+
+<h2>Todo List</h2>
+
+<div class="form">
+  <input [(ngModel)]="todoText" type="text" class="form-control">
+  <button (click)="saveTodo()" class="btn btn-sm btn-info">Add</button>
+</div>
+
+<div class="list">
+  <!--*ngFor-->
+
+</div>
+<ul class="font">
+  <li *ngFor="let todo of todoList">{{todo}}</li>
+</ul>
+
+</body>

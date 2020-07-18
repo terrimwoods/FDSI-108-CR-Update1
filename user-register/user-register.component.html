@@ -1,0 +1,58 @@
+
+<form class="offset-1">
+  <h3>Register New User</h3>
+
+  <div class="form-group col-6">
+      <label for="exampleUserName">User Name</label>
+      <input [(ngModel)]="model.userName" name="userName" type="text" class="form-control" >
+  </div>
+
+  <div class="form-group col-6 ">
+    <label for="exampleInputEmail1">Email address</label>
+    <input [(ngModel)]="model.email" name="useremail" type="email" class="form-control"  aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted"><i>We'll never share your email with anyone else.</i></small>
+  </div>
+
+  <div class="form-group col-6">
+    <label for="InputPassword1">Password</label>
+    <input [(ngModel)]="model.password" name="password"  type="password" class="form-control" >
+  </div>
+
+  <div class="form-group col-6">
+    <label for="retypePassword1">Retype Password</label>
+    <input [(ngModel)]="retypePass" name="retypePass" type="password" class="form-control" >
+  </div>
+
+
+  <div class="form-group col-6 ">
+    <label for="exampleUserName">First</label>
+    <input [(ngModel)]="model.firstName" name="firstName" type="text" class="form-control" >
+</div>
+
+<div class="form-group col-6">
+  <label for="exampleUserName">Last</label>
+  <input [(ngModel)]="model.lastName" name="lastName" type="text" class="form-control" >
+</div>
+
+<div class="form-group col-6 ">
+  <label for="exampleUserName">Phone Number</label>
+  <input [(ngModel)]="model.phoneNumber" name="userPhone" type="text" class="form-control" >
+</div>
+
+<div class="form-group col-4">
+  <label for="exampleUserName">Age</label>
+  <input [(ngModel)]="model.age" name="userAge" type="number" class="form-control" >
+</div>
+
+<div class="form-group col-6">
+  <label for="exampleUserName">Employee Number</label>
+  <input [(ngModel)]="model.employeeNumber" name="employeeNumber" type="number" class="form-control" >
+</div>
+
+<div class="form-group col-6">
+  <label for="exampleUserName">Address</label>
+  <input [(ngModel)]="model.address" name="userAddress" type="text" class="form-control" >
+</div>
+
+  <button (click)="save()" name="submit" type="button" class="btn btn-primary">Submit</button>
+</form>

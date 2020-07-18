@@ -1,0 +1,18 @@
+
+<div class="form">
+
+  <h3>Temp Converter</h3>
+
+<div class="first">
+  <label><i>Celsius</i></label>
+  <input type="number"[(ngModel)]="celsius"(ngModelChange)="convertToF()">
+</div>
+
+  <br>
+
+<div class="second">
+  <label><b>Fahrenheit</b></label>
+  <input type="number" [(ngModel)]="fahrenheit"(ngModelChange)="convertToC()">
+</div>
+</div>
+
